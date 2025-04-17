@@ -1,8 +1,27 @@
-export const App = () => {
+import projects from "./data/projects.json"
+import skills from "./data/skills.json"
+
+
+import Header from "./components/Header/Header"
+import Tech from "./components/Tech/Tech"
+import ProjectSection from "./components/Projects/ProjectSection"
+import Skills from "./components/Skills/Skills"
+import Articles from "./components/Articles/Articles"
+import Footer from "./components/Footer/Footer"
+
+const App = () => {
   return (
     <>
-      <h1>Portfolio</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum! Maxime animi nostrum facilis distinctio neque labore consectetur beatae eum ipsum excepturi voluptatum, dicta repellendus incidunt fugiat, consequatur rem aperiam.</p>
+    <Header />
+    <Tech />
+    <ProjectSection 
+    projects={projects.projects}/>
+    <Skills
+    skills={skills.skills}/>
+    <Articles />
+    <Footer />
     </>
   )
 }
+
+export default App

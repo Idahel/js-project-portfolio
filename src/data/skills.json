@@ -1,0 +1,48 @@
+{
+    "skills": [
+      {
+        "name": "Code",
+        "list": [
+          "HTML5",
+          "CSS3",
+          "JavaScript ES6",
+          "TypeScript",
+          "GitHub"
+        ]
+      },
+      {
+        "name": "Toolbox",
+        "list": [
+          "Illustrator",
+          "Indesign",
+          "Premiere",
+          "Figma",
+          "Keynote",
+          "Slack",
+          "Monday",
+          "Notion",
+          "Office"
+        ]
+      },
+      {
+        "name": "Upcoming",
+        "list": [
+          "React",
+          "Node.js"
+        ]
+      },
+      {
+        "name": "More",
+        "list": [
+          "Project coordination",
+          "Client management",
+          "Branding",
+          "Strategy",
+          "Concept development",
+          "Agile methodology",
+          "Cross-functional collaboration",
+          "Web Accessibility"
+        ]
+      }
+    ]
+  }

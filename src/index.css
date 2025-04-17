@@ -1,4 +1,30 @@
 body {
-  background: pink;
-  color: hotpink;
+  background: #d5ff97;
+  color: #000000;
+}
+
+h1 {
+  font-family: "Mynerve";
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2, h3 {
+  font-family: 'Satoshi-Regular';
+}
+
+p {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('../fonts/Satoshi-Regular.woff') format('woff'),
+       url('../fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
