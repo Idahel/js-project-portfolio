@@ -1,11 +1,14 @@
 import { Button } from "../Button.jsx"
 import styled from "styled-components"
+import { css } from "styled-components"
+import { media } from "../breakpoints.js"
 
 export const ProjectCardWrapper = styled.article `
   display: flex;
   flex-direction: row;
   width: 1184px;
   height: 479px;
+  padding-top: 128px;
 
   .content-wrapper{
     display: flex;
@@ -13,7 +16,6 @@ export const ProjectCardWrapper = styled.article `
     gap: 16px;
   }
 
-  
   img {
     width: 100%;
   }

@@ -6,12 +6,12 @@ export const HeaderSection = styled.section `
     background-color: ${props => props.theme.colors.primary};
     display: flex;
     flex-direction: row;
-    gap: 64px;
+    gap: 10px;
 
     ${css`
     @media ${media.tablet} {
       flex-direction: column;
-      gap: 32px;
+      gap: 24px;
     }
 
     @media ${media.mobile} {
@@ -26,7 +26,7 @@ export const NameAndTitle = styled.div`
     margin-bottom: 64px;
 
     .my-name{
-        margin-bottom: 16px;
+        margin-bottom: 18px;
     }
 
     ${css`
@@ -39,22 +39,28 @@ export const NameAndTitle = styled.div`
     @media ${media.mobile} {
     margin-top: 24px;
     margin-left: 16px;
+
+    .my-name{
+        text-align: center;
+    }
     }
   `}
     `
 export const IntroAndImage = styled.div`
     margin-top: 81px;
     margin-right: 128px;
+    align-self: flex-end;
+    margin-bottom: 64px;
 
     img {
-        width: 374px;
-        height: 333px;
+        max-width: 335px;
+        max-height: 335px;
         object-fit: cover;
     }
 
     p {
         margin-top: 16px;
-        margin-bottom: 64px;
+        max-width: 335px;
     }
 
     ${css`
@@ -64,18 +70,29 @@ export const IntroAndImage = styled.div`
     margin-top: 0;
     margin-left: 24px;
     margin-right: 24px;
-    margin-bottom: 64px;
     gap: 10px;
+    
+    p {
+        max-width: none;
+        justify-content: flex-start;
+        align-items: flex-end;
+        align-content: flex-end;
+        margin-bottom: 0;
+    }
+
     }
 
     @media ${media.mobile} {
     display: flex;
     flex-direction: column;
-    margin: 24px 16px;
+    margin-left: 16px;
+    margin-right: 16px;
 
     img {
         align-self: flex-end;
-    }
+        max-width: 220px;
+        max-height: 220px;
+        }
     }
   `}
 `
@@ -85,7 +102,7 @@ const Header = () => {
         <HeaderSection>
             <NameAndTitle>
             <p className="my-name">Ida Hellgren</p>
-            <h1>web dev + project management</h1>
+            <h1>web dev<br />+<br />project management</h1>
             </NameAndTitle>
             <IntroAndImage>
             <img src="/images/ida.webp" alt="" />

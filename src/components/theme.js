@@ -6,7 +6,7 @@ export const theme = {
         primary: '#d5ff97',
         secondary: '#000000',
         textPrimary: '#000000',
-        textSecondary: 'FFFFFF',
+        textSecondary: '#ffffff',
       },
 
       typography: {
@@ -15,7 +15,7 @@ export const theme = {
         font-family: "Mynerve";
         font-weight: 400;
         font-style: normal;
-        font-size: 130px;
+        font-size: 100px;
         line-height: 120px;
 
         ${css`
