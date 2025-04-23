@@ -1,9 +1,38 @@
-const ProjectCard = ({title,description}) => {
+import { Button } from "../Button.jsx"
+import styled from "styled-components"
+
+export const ProjectCardWrapper = styled.article `
+  display: flex;
+  flex-direction: row;
+  width: 1184px;
+  height: 479px;
+
+  .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  
+  img {
+    width: 100%;
+  }
+`
+
+
+const ProjectCard = ({title, description, image}) => {
   return (
-    <article className="project-card">
+
+    <ProjectCardWrapper>
+    <div className="image-wrapper">
+    <img src={image} alt={title} />
+    </div>
+    <div className="content-wrapper">
     <h3>{title}</h3>
     <p>{description}</p>
-    </article>
+    <Button/>
+    </div>
+    </ProjectCardWrapper>
   )
   }
   

@@ -1,3 +1,7 @@
+import GlobalStyles from "./components/GlobalStyles"
+import { ThemeProvider } from 'styled-components'
+import { theme } from './components/theme'
+
 import projects from "./data/projects.json"
 import skills from "./data/skills.json"
 
@@ -11,7 +15,8 @@ import Footer from "./components/Footer/Footer"
 
 const App = () => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
+    <GlobalStyles />
     <Header />
     <Tech />
     <ProjectSection 
@@ -20,7 +25,7 @@ const App = () => {
     skills={skills.skills}/>
     <Articles />
     <Footer />
-    </>
+    </ThemeProvider>
   )
 }
 
