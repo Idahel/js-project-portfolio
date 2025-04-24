@@ -24,13 +24,25 @@ export const ArticleContainer = styled.div`
   `}
 `
 export const ArticleImage = styled.img`
-    
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 `
 
 export const ArticleCard = styled.div`
     display: flex;
     flex-direction: row;
     gap: 64px;
+  
+    ${css`
+    @media ${media.tablet} {
+      gap: 32px;
+    }
+    @media ${media.mobile} {
+      display: flex;
+      flex-direction: column;
+    }
+  `}
 `
 
 export const ArticleContentContainer = styled.div`
