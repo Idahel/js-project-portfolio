@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import { css } from "styled-components"
 import { media } from "../breakpoints.js"
+import GithubIcon from "/icons/Ic-Github.svg"
+import LinkedInIcon from "/icons/linked-in.svg"
 
 export const FooterSection = styled.section`
   background-color: ${props => props.theme.colors.secondary};
@@ -42,17 +44,25 @@ export const FooterIcons = styled.div`
     flex-direction: row;
     justify-content: center;
     gap: 32px;
-    margin-top: 64px;
+    margin-top: 64px;  
+`
+export const IconLink = styled.a`
+    transition: transform 0.3s ease-in-out;
 
-    img{
-        height: 21px;
-        width: 21px;
-    }    
+    img {
+    height: 21px;
+    width: 21px;
+    &:hover {
+    height: 31px;
+    width: 31px;
+  }
+  }
+
 `
 
-
-
 const Footer = () => {
+    const GithubUrl = "https://github.com/Idahel"
+    const LinkedinUrl = "https://www.linkedin.com/in/ida-hellgren-67866912b/"
     return (
         <FooterSection>
         <FooterDiv>
@@ -63,8 +73,12 @@ const Footer = () => {
         <p>idakatrinhellgren@gmail.com</p>
         </FooterContent>
         <FooterIcons>
-            <img src="./icons/Ic-Github.svg" alt="Github icon" />
-            <img src="./icons/linked-in.svg" alt="LinkedIn icon" />
+        <IconLink href={GithubUrl} target="_blank" rel="noopener noreferrer">
+        <img src={GithubIcon} alt="Github icon" />
+        </IconLink>
+        <IconLink href={LinkedinUrl} target="_blank" rel="noopener noreferrer">
+        <img src={LinkedInIcon} alt="LinkedIn icon" />
+        </IconLink>
         </FooterIcons>
         </FooterDiv>
         </FooterSection>

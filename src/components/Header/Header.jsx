@@ -1,6 +1,15 @@
-import styled from "styled-components"
-import { css } from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 import { media } from "../breakpoints.js"
+
+const shakeAnimation = keyframes`
+  0% { transform: translateX(0) rotate(0deg); }
+  10% { transform: translateX(-10px) rotate(-3deg); }
+  20% { transform: translateX(10px) rotate(3deg); }
+  30% { transform: translateX(-10px) rotate(-3deg); }
+  40% { transform: translateX(10px) rotate(3deg); }
+  50% { transform: translateX(-10px) rotate(-3deg); }
+  100% { transform: translateX(10px) rotate(3deg); }
+`
 
 export const HeaderSection = styled.section `
     background-color: ${props => props.theme.colors.primary};
@@ -58,7 +67,13 @@ export const IntroAndImage = styled.div`
         max-width: 335px;
         max-height: 335px;
         object-fit: cover;
+        transition: transform 0.8s ease-in-out;
+
+    &:hover {
+        animation: ${shakeAnimation} 0.5s cubic-bezier(.36,.07,.19,.97) both;
     }
+    }
+    
 
     p {
         margin-top: 16px;
