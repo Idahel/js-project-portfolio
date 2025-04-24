@@ -9,9 +9,13 @@ const ButtonWrapper = styled.button`
   height: 48px;
   padding: 0 16px;
   border-radius: 12px;
+  gap: 16px;
   justify-content: flex-start;
   align-items: center;
-  align-content: center;
+  flex-direction: row;
+  cursor: pointer;
+  border: 1px solid ${props => props.theme.colors.secondary};
+
 
   img{
   height: 31px;
@@ -29,11 +33,11 @@ const ButtonWrapper = styled.button`
 }
 `
 
-export const Button = ({ primaryBtn }) => {
+export const Button = ({ primaryBtn, iconSrc, altText, buttonText, link }) => {
   return (
-    <ButtonWrapper primaryBtn={primaryBtn}>
-      <img primaryBtn={primaryBtn} src="/icons/Ic-Web.svg" alt="" />
-      Live demo
+    <ButtonWrapper primaryBtn={primaryBtn} onClick={() => window.open(link, "_blank")}>
+      {iconSrc && <img primaryBtn={primaryBtn} src={iconSrc} alt={altText} />}
+      <p>{buttonText}</p>
     </ButtonWrapper>
   )
 }

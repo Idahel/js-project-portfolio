@@ -7,6 +7,7 @@ export const HeaderSection = styled.section `
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-content: space-between;
 
     ${css`
     @media ${media.tablet} {
@@ -49,7 +50,8 @@ export const NameAndTitle = styled.div`
 export const IntroAndImage = styled.div`
     margin-top: 81px;
     margin-right: 128px;
-    align-self: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
     margin-bottom: 64px;
 
     img {

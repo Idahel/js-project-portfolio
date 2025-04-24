@@ -10,7 +10,6 @@ export const theme = {
       },
 
       typography: {
-      
       h1:`
         font-family: "Mynerve";
         font-weight: 400;

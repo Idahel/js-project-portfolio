@@ -9,15 +9,15 @@ export const TechSection = styled.section `
     flex-direction: column;
     `
 export const TechDiv = styled.div `
-    margin: 64px 128px;
+    padding: 64px 128px;
 
     ${css`
     @media ${media.tablet} {
-    margin: 64px 24px;
+    padding: 64px 24px;
     }
 
     @media ${media.mobile} {
-    margin: 64px 16px;
+    padding: 64px 16px;
     }
   `}
 `
