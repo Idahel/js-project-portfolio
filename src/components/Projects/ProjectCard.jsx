@@ -9,6 +9,8 @@ export const ProjectCardWrapper = styled.article `
   display: flex;
   flex-direction: row;
   gap: 64px;
+  width: 100%;
+  justify-content: space-between;
 
   ${css`
     @media ${media.tablet} {
@@ -46,7 +48,6 @@ export const ProjectContentWrapper = styled.div `
     display: flex;
     flex-direction: column;
     gap: 16px;
-    max-width: 580px;
 `
 export const ButtonContainer = styled.div `
   display: flex;
@@ -65,8 +66,6 @@ export const TagItem = styled.li `
   padding: 2px 8px;
   border-radius: 4px;
 `
-
-
 
 const ProjectCard = ({title, description, image, netlify, github, tags}) => {
   return (

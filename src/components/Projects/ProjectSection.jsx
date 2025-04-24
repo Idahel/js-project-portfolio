@@ -12,6 +12,7 @@ export const ProjectSectionDiv = styled.div `
     flex-direction: column;
     gap: 64px;
 
+
     ${css`
     @media ${media.tablet} {
     padding: 64px 24px;

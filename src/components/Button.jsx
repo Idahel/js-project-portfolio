@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const ButtonWrapper = styled.button`
   display: flex;
+  flex-direction: row;
   background-color: ${props => (props.primaryBtn ? "black" : "white")};
   color: ${props => (props.primaryBtn ? "white" : "black")};
   font-size: 18px;
@@ -12,7 +13,7 @@ const ButtonWrapper = styled.button`
   gap: 16px;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
+  align-content: center;
   cursor: pointer;
   border: 1px solid ${props => props.theme.colors.secondary};
 

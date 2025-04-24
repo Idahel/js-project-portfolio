@@ -24,7 +24,7 @@ export const ArticleContainer = styled.div`
   `}
 `
 export const ArticleImage = styled.img`
-  width: 100%;
+  max-width: 450px;
   height: auto;
   object-fit: contain;
 `
@@ -33,6 +33,7 @@ export const ArticleCard = styled.div`
     display: flex;
     flex-direction: row;
     gap: 64px;
+    justify-content: space-evenly;
   
     ${css`
     @media ${media.tablet} {
@@ -51,6 +52,12 @@ export const ArticleContentContainer = styled.div`
     gap: 16px;
     align-items: flex-start;
     max-width: 580px;
+
+    ${css`
+    @media ${media.mobile} {
+      max-width: 100%;
+    }
+  `}
 `
 
 export const ArticleDate = styled.p`
