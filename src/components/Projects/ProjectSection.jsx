@@ -28,7 +28,7 @@ export const ProjectSectionDiv = styled.div `
 
     @media ${media.maxWidth} {
         margin-left: auto;
-        margin-right: auto;
+        
     }
   `}
 `
