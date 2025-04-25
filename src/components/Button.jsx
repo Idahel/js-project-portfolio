@@ -17,7 +17,6 @@ const ButtonWrapper = styled.button`
   cursor: pointer;
   border: 1px solid ${props => props.theme.colors.secondary};
 
-
   img{
   height: 31px;
   width: 31px;

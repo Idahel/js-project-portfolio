@@ -89,6 +89,7 @@ export const theme = {
           font-optical-sizing: auto;
           font-style: normal;
           font-size: 18px;
+          
         ${css`
             @media ${media.tablet} {
                 font-size: 16px;

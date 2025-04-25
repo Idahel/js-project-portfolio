@@ -13,7 +13,6 @@ const GlobalStyles = createGlobalStyle `
     padding: 0;
     }
 
-
     @font-face {
         font-family: 'Satoshi-Regular';
         src: url(${SatoshiRegularWoff2}) format('woff2'),

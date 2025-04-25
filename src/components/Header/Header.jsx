@@ -31,8 +31,8 @@ export const HeaderWrapper = styled.div`
     }
 
     @media ${media.mobile} {
-    flex-direction: column;
-      gap: 16px;
+        flex-direction: column;
+        gap: 16px;
     }
     @media ${media.maxWidth} {
         margin-left: auto;
