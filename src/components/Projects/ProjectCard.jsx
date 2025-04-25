@@ -35,13 +35,30 @@ export const ProjectImageWrapper = styled.div `
     }
 
     @media ${media.mobile} {
-    max-width: 100%;
+    max-width: 60%;
+    align-self: center;
     }
   `}
 `
 
 export const ProjectImage = styled.img`
   max-width: 100%;
+
+  ${css`
+    @media ${media.mobile} {
+    display: none;
+    }
+  `}
+`
+
+export const ProjectImagePhone = styled.img`
+  display: none;
+  ${css`
+    @media ${media.mobile} {
+    display: block;
+    max-width: 100%;
+    }
+  `}
 `
 
 export const ProjectContentWrapper = styled.div `
@@ -67,12 +84,13 @@ export const TagItem = styled.li `
   border-radius: 4px;
 `
 
-const ProjectCard = ({title, description, image, netlify, github, tags}) => {
+const ProjectCard = ({title, description, image, imagePhone, netlify, github, tags}) => {
   return (
 
     <ProjectCardWrapper>
     <ProjectImageWrapper>
     <ProjectImage src={image} alt={title} />
+    <ProjectImagePhone src={imagePhone} alt={title} />
     </ProjectImageWrapper>
     <ProjectContentWrapper>
     {tags && tags.length > 0 && (

@@ -38,6 +38,7 @@ const ProjectSection = ({projects}) => {
                 title={project.name}
                 description={project.description}
                 image={project.image}
+                imagePhone={project.imagePhone}
                 netlify={project.netlify}
                 github={project.github}
                 tags={project.tags}
