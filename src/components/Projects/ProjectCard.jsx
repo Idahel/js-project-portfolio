@@ -12,7 +12,21 @@ export const ProjectCardWrapper = styled.article `
   width: 100%;
   justify-content: space-between;
 
+  
+
+
   ${css`
+    @media ${media.desktop} {
+      &:nth-child(odd) {
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: row-reverse;
+  }
+
+  &:nth-child(even) {
+  }
+  }
+
     @media ${media.tablet} {
     display: flex;
     flex-direction: column;
