@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { css } from "styled-components"
 import { media } from "../breakpoints.js"
-import { SlideInOnScroll } from "../SlideInOnScroll.jsx"
 
 export const ArticleSection = styled.section`
   background-color: ${props => props.theme.colors.primary};
@@ -86,7 +85,6 @@ export const ArticleDate = styled.p`
 const Articles = () => {
     return (
         <ArticleSection>
-        <SlideInOnScroll threshold={0.2} duration="0.8s">
         <ArticleContainer>
         <h2>My Words</h2>
         <ArticleCard>
@@ -100,7 +98,6 @@ I believe that this journey will not only make me a better project manager but a
         </ArticleContentContainer>
         </ArticleCard>
         </ArticleContainer>
-        </SlideInOnScroll>
         </ArticleSection>
     )
 }
