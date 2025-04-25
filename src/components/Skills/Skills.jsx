@@ -12,6 +12,8 @@ export const SkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 64px;
+  max-width: 1600px;
+  width: 100%;
 
   ${css`
     @media ${media.tablet} {
@@ -22,6 +24,11 @@ export const SkillsContainer = styled.div`
     @media ${media.mobile} {
       padding: 64px 16px;
       align-items: flex-start;
+    }
+
+    @media ${media.maxWidth} {
+        margin-left: auto;
+        margin-right: auto;
     }
   `}
 `

@@ -12,20 +12,16 @@ export const ProjectCardWrapper = styled.article `
   width: 100%;
   justify-content: space-between;
 
-  
-
-
   ${css`
     @media ${media.desktop} {
       &:nth-child(odd) {
-    justify-content: flex-start;
-    text-align: left;
-    flex-direction: row-reverse;
-  }
-
-  &:nth-child(even) {
-  }
-  }
+      justify-content: flex-start;
+      text-align: left;
+      flex-direction: row-reverse;
+      }
+      &:nth-child(even) {
+      }
+    }
 
     @media ${media.tablet} {
     display: flex;
@@ -38,7 +34,7 @@ export const ProjectCardWrapper = styled.article `
     flex-direction: column;
     gap: 16px;
     }
-  `}
+`}
 `
 
 export const ProjectImageWrapper = styled.div `

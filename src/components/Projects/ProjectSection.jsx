@@ -5,12 +5,15 @@ import { media } from "../breakpoints.js"
 
 export const ProjectSectionWrapper = styled.section `
 background-color: ${props => props.theme.colors.primary};
+width: 100%;
 `
 export const ProjectSectionDiv = styled.div `
     padding: 64px 128px;
     display: flex;
     flex-direction: column;
     gap: 64px;
+    max-width: 1600px;
+    width: 100%;
 
 
     ${css`
@@ -21,6 +24,11 @@ export const ProjectSectionDiv = styled.div `
     @media ${media.mobile} {
     padding: 64px 16px;
     align-items: center;
+    }
+
+    @media ${media.maxWidth} {
+        margin-left: auto;
+        margin-right: auto;
     }
   `}
 `

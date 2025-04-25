@@ -8,8 +8,10 @@ export const TechSection = styled.section `
     display: flex;
     flex-direction: column;
     `
-export const TechDiv = styled.div `
+export const TechWrapper = styled.div `
     padding: 64px 128px;
+    max-width: 1600px;
+    width: 100%;
 
     ${css`
     @media ${media.tablet} {
@@ -19,16 +21,21 @@ export const TechDiv = styled.div `
     @media ${media.mobile} {
     padding: 64px 16px;
     }
+
+    @media ${media.maxWidth} {
+        margin-left: auto;
+        margin-right: auto;
+    }
   `}
 `
 
 const Tech = () => {
     return (
         <TechSection>
-            <TechDiv>
+            <TechWrapper>
             <h2>Tech</h2>
             <p>HTML5, CSS, JavaScript(ES6), TypeScript, React, Node.js, Mongo DB, Web Accessibility, APIs, mob-programming, pair-programming, GitHub.</p>
-            </TechDiv>
+            </TechWrapper>
         </TechSection>
     )
 }

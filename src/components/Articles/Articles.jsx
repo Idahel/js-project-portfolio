@@ -12,6 +12,8 @@ export const ArticleContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 64px;
+  max-width: 1600px;
+  width: 100%;
 
   ${css`
     @media ${media.tablet} {
@@ -20,6 +22,11 @@ export const ArticleContainer = styled.div`
 
     @media ${media.mobile} {
       padding: 64px 16px;
+    }
+
+    @media ${media.maxWidth} {
+        margin-left: auto;
+        margin-right: auto;
     }
   `}
 `

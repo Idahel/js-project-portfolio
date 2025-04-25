@@ -13,6 +13,8 @@ export const FooterDiv = styled.div`
   padding: 64px 128px;
   display: flex;
   flex-direction: column;
+  max-width: 1600px;
+  width: 100%;
 
   ${css`
     @media ${media.tablet} {
@@ -21,6 +23,11 @@ export const FooterDiv = styled.div`
 
     @media ${media.mobile} {
       padding: 64px 16px;
+    }
+    
+    @media ${media.maxWidth} {
+        margin-left: auto;
+        margin-right: auto;
     }
   `}
 `

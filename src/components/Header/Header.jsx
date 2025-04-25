@@ -13,10 +13,16 @@ const shakeAnimation = keyframes`
 
 export const HeaderSection = styled.section `
     background-color: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.textPrimary};
+`
+
+export const HeaderWrapper = styled.div`
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: space-between;
+    max-width: 1600px;
+    width: 100%;
 
     ${css`
     @media ${media.tablet} {
@@ -25,8 +31,12 @@ export const HeaderSection = styled.section `
     }
 
     @media ${media.mobile} {
-      flex-direction: column;
+    flex-direction: column;
       gap: 16px;
+    }
+    @media ${media.maxWidth} {
+        margin-left: auto;
+        margin-right: auto;
     }
   `}
 `
@@ -117,6 +127,7 @@ export const IntroAndImage = styled.div`
 const Header = () => {
     return (
         <HeaderSection>
+            <HeaderWrapper>
             <NameAndTitle>
             <p className="my-name">Ida Hellgren</p>
             <h1>web dev<br />+<br />project management</h1>
@@ -125,6 +136,7 @@ const Header = () => {
             <img src="/images/ida.webp" alt="" />
             <p>A web developer with a background in communications. I’m good at figure out what people need and make things happen. Now, I'm excited to use my growing JavaScript skills to build engaging and user-friendly digital products that just work well for people.</p>
             </IntroAndImage>
+            </HeaderWrapper>
         </HeaderSection>
     )
 }
