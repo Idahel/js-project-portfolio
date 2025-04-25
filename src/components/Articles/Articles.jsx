@@ -88,7 +88,7 @@ const Articles = () => {
         <ArticleContainer>
         <h2>My Words</h2>
         <ArticleCard>
-        <ArticleImage src="/images/my-words.png" alt="" />
+        <ArticleImage src="/images/my-words.png" alt="an illustration of a rocket" />
         <ArticleContentContainer>
         <ArticleDate>24 April 2025</ArticleDate>
         <h3>JavaScript bootcamp - Why?</h3>

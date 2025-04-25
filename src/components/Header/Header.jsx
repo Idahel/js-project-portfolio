@@ -133,7 +133,7 @@ const Header = () => {
             <h1>web dev<br />+<br />project management</h1>
             </NameAndTitle>
             <IntroAndImage>
-            <img src="/images/ida.webp" alt="" />
+            <img src="/images/ida.webp" alt="a plastic bag with a smiley on it" />
             <p>A web developer with a background in communications. I’m good at figure out what people need and make things happen. Now, I'm excited to use my growing JavaScript skills to build engaging and user-friendly digital products that just work well for people.</p>
             </IntroAndImage>
             </HeaderWrapper>
