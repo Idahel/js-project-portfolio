@@ -129,7 +129,7 @@ const ProjectCard = ({
       <Button
         primaryBtn
         iconSrc={WebIcon}
-        altText="Live demo"
+        altText="Netlify webpage"
         buttonText="Live Demo"
         link={netlify}
       />
