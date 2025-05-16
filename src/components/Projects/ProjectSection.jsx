@@ -1,13 +1,12 @@
-import ProjectCard from "./ProjectCard"
-import styled from "styled-components"
-import { css } from "styled-components"
+import { styled, css } from "styled-components"
 import { media } from "../breakpoints.js"
+import ProjectCard from "./ProjectCard"
 
-export const ProjectSectionWrapper = styled.section `
+export const ProjectSectionWrapper = styled.section`
 background-color: ${props => props.theme.colors.primary};
 width: 100%;
 `
-export const ProjectSectionDiv = styled.div `
+export const ProjectSectionDiv = styled.div`
     padding: 64px 128px;
     display: flex;
     flex-direction: column;

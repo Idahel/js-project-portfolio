@@ -5,8 +5,7 @@ import SatoshiRegularTtf from '/fonts/Satoshi-Regular.ttf'
 
 
 
-const GlobalStyles = createGlobalStyle `
-
+export const GlobalStyles = createGlobalStyle`
     * {
     box-sizing: border-box; 
     margin: 0;

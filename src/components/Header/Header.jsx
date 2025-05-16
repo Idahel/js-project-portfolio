@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components"
+import { styled, css, keyframes } from "styled-components"
 import { media } from "../breakpoints.js"
 
 const shakeAnimation = keyframes`
@@ -11,7 +11,7 @@ const shakeAnimation = keyframes`
   100% { transform: translateX(10px) rotate(3deg); }
 `
 
-export const HeaderSection = styled.section `
+export const HeaderSection = styled.section`
     background-color: ${props => props.theme.colors.primary};
     color: ${props => props.theme.colors.textPrimary};
 `
@@ -81,23 +81,22 @@ export const IntroAndImage = styled.div`
 
     &:hover {
         animation: ${shakeAnimation} 0.5s cubic-bezier(.36,.07,.19,.97) both;
-    }
+        }
     }
     
-
     p {
         margin-top: 16px;
         max-width: 335px;
     }
 
     ${css`
-    @media ${media.tablet} {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 0;
-    margin-left: 24px;
-    margin-right: 24px;
-    gap: 10px;
+        @media ${media.tablet} {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 0;
+        margin-left: 24px;
+        margin-right: 24px;
+        gap: 10px;
     
     p {
         max-width: none;
@@ -110,10 +109,10 @@ export const IntroAndImage = styled.div`
     }
 
     @media ${media.mobile} {
-    display: flex;
-    flex-direction: column;
-    margin-left: 16px;
-    margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
 
     img {
         align-self: flex-end;

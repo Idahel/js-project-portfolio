@@ -1,5 +1,4 @@
-import styled from "styled-components"
-import { css } from "styled-components"
+import { css, styled } from "styled-components"
 import { media } from "../breakpoints.js"
 
 export const ArticleSection = styled.section`

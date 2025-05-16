@@ -1,5 +1,4 @@
-import styled from "styled-components"
-import { css } from "styled-components"
+import { styled, css } from "styled-components"
 import { media } from "../breakpoints.js"
 import GithubIcon from "/icons/Ic-Github.svg"
 import LinkedInIcon from "/icons/linked-in.svg"

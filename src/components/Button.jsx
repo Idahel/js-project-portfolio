@@ -33,10 +33,22 @@ const ButtonWrapper = styled.button`
 }
 `
 
-export const Button = ({ primaryBtn, iconSrc, altText, buttonText, link }) => {
+export const Button = ({ 
+  primaryBtn, 
+  iconSrc, 
+  altText, 
+  buttonText,
+  link }) => {
   return (
-    <ButtonWrapper primaryBtn={primaryBtn} onClick={() => window.open(link, "_blank")}>
-      {iconSrc && <img primaryBtn={primaryBtn} src={iconSrc} alt={altText} />}
+    <ButtonWrapper 
+    primaryBtn={primaryBtn} 
+    onClick={() => window.open(link, "_blank")}>
+      {iconSrc && 
+      <img 
+      primaryBtn={primaryBtn} 
+      src={iconSrc} 
+      alt={altText} 
+      />}
       <p>{buttonText}</p>
     </ButtonWrapper>
   )

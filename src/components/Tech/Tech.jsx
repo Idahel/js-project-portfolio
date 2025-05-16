@@ -1,14 +1,13 @@
-import styled from "styled-components"
-import { css } from "styled-components"
+import { styled, css } from "styled-components"
 import { media } from "../breakpoints.js"
 
-export const TechSection = styled.section `
+export const TechSection = styled.section`
     background-color: ${props => props.theme.colors.secondary};
     color: ${props => props.theme.colors.textSecondary};
     display: flex;
     flex-direction: column;
     `
-export const TechWrapper = styled.div `
+export const TechWrapper = styled.div`
     padding: 64px 128px;
     max-width: 1600px;
     width: 100%;

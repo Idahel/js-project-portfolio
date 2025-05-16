@@ -1,11 +1,10 @@
-import { Button } from "../Button.jsx"
-import styled from "styled-components"
-import { css } from "styled-components"
+import { styled, css } from "styled-components"
 import { media } from "../breakpoints.js"
+import { Button } from "../Button.jsx"
 import GithubIcon from '/icons/Ic-Github.svg'
 import WebIcon from '/icons/Ic-Web.svg'
 
-export const ProjectCardWrapper = styled.article `
+export const ProjectCardWrapper = styled.article`
   display: flex;
   flex-direction: row;
   gap: 64px;
@@ -37,7 +36,7 @@ export const ProjectCardWrapper = styled.article `
 `}
 `
 
-export const ProjectImageWrapper = styled.div `
+export const ProjectImageWrapper = styled.div`
   max-width: 540px;
   ${css`
     @media ${media.tablet} {
@@ -71,30 +70,37 @@ export const ProjectImagePhone = styled.img`
   `}
 `
 
-export const ProjectContentWrapper = styled.div `
+export const ProjectContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 16px;
 `
-export const ButtonContainer = styled.div `
+export const ButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
 `
 
-export const ProjectTagsList = styled.ul `
+export const ProjectTagsList = styled.ul`
   list-style: none;
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
 `
-export const TagItem = styled.li `
+export const TagItem = styled.li`
   border: solid 1px black;
   padding: 2px 8px;
   border-radius: 4px;
 `
 
-const ProjectCard = ({title, description, image, imagePhone, netlify, github, tags}) => {
+const ProjectCard = ({
+  title,
+  description,
+  image,
+  imagePhone,
+  netlify,
+  github, 
+  tags}) => {
   return (
 
     <ProjectCardWrapper>
